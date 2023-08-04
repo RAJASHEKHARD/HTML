@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		HTML DOM Input Color autocomplete Property
+	</title>
+</head>
+<body style="text-align:center;">
+	<h1>
+		GeeksForGeeks
+	</h1>
+	<h2>
+		HTML DOM Input Color autocomplete Property
+	</h2>
+	<form id="myGeeks">
+		<label>
+			Select your favorite color:
+		</label>
+		<input type="color" value="#009900"
+			name="Geek_color" id="color"
+			autocomplete="on">
+	</form>
+	<button onclick="myGeeks()">
+		Click Here!
+	</button>
+	<p id="GFG" style=
+		"color:green;font-size:24px;">
+	</p>
+	<script>
+		function myGeeks() {
+			var x =
+			document.getElementById("color").autocomplete
+					= "off";
+
+			document.getElementById("GFG").innerHTML
+					= "The value of the autocomplete "
+					+ "attribute was changed to " + x;
+		}
+	</script>
+</body>
+</html>
